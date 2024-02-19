@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="ocks-org do-not-copy">
+<meta charset="utf-8">
+<title>Connectivity of Rides based on Wards</title>
+
+<style>
+
+@import url(style.css);
+
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+  display: none;
+}
+
+</style>
+
+<header>
+</header>
+
+<h1 style="margin-bottom: 50px; font-weight: bold; color: #0C0B31;"> Capital Bikeshare Rides by Wards 2021 to 2023</h1>
+
+
+<h2 style="text-align: center; font-weight: bold;"> Administrative Wards of Washington DC </h2>
+
+
+<div style="display: flex; margin-bottom: 70px;">
+
+  <img src="01_Wards_WashingtonDC.png" style="width: 60%;"/>
+
+<aside style="text-align: justify;">
+<br> <br> <br> <br> <br> <br>
+<p> This map shows the administrative level "Ward" of Washington, DC. We have 8 wards over here. </p>
+<p> Data Source: <a href="https://opendata.dc.gov/" target="_blank">OpenData DC</a></p>
+<p> Developed with: <a https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview" target="_blank"> ArcGIS Pro </a></p>
+</aside>
+
+</div>
+
+<h2 style="text-align: center;"> Bike Stations Density Map </h2>
+
+<div style="display: flex; margin-bottom: 10px;">
+
+<aside style="text-align: justify;">
+<br> <br> <br> <br> <br> <br>
+<p> The map shows bike station density of Washington DC. Here each hexagon represents 0.5 kilometer squares. </p>
+<p>It was created using the <i> Generate Tessellation </i> tool in ArcGIS Pro
+<p> Developed with: <a https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview" target="_blank"> ArcGIS Pro </a></p>
+</aside>
+
+  <img src="02_StationDensity_Map.png" style="width: 60%;"/>
+
+</div>
+
+
+<h2 style="text-align: center; font-weight: bold;"> Stations Per Administrative Units </h2>
+
+
+<div style="display: flex; margin-bottom: 70px;">
+
+  <img src="05_StationsPerWards.png" style="width: 60%;"/>
+
+<aside style="text-align: justify;">
+<br> <br> <br> <br> <br> <br>
+<p> 
+This table summarizes the station counts within eight administrative wards. It highlights the variations in station distribution across these wards, with Ward 2 having the highest count of 103 stations, followed by Ward 6 with 73 stations. The table provides valuable insights into the availability of stations in different areas within the administrative region.</p>
+</aside>
+
+</div>
+
+
+<h2 style="text-align: center;"> Cord Diagram showing Frequency of Trips among Wards </h2>
+
+<div style="display: flex; margin-bottom: 10px;">
+  
+  <img src="03_Chord-Diagram.png" style="width: 60%;"/>
+
+<aside style="text-align: justify;">
+<br> <br> <br> <br> <br> <br> 
+<p> The chart represents travel patterns between eight different wards. Each number in the chart shows how many trips people made between two specific wards. Thicker lines mean more trips were made between those wards. 
+<p> For example, the number in the intersection of "Ward 6" and "Ward 2" tells us how many trips were made from Ward 6 to Ward 2. This chart helps us understand how people move around these wards.
+</aside>
+
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 70px; height: 100vh;">
+  
+  <img src="04_Chord-Diagram_Table.png" style="width: 70%;"/>
+
+</div>
+
+
+<footer>
+  <aside>October 23, 2023</aside>
+  <a href="../" rel="author">Made for a Course Assignment</a>
+</footer>
